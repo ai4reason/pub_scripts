@@ -24,7 +24,7 @@ DBLP_AUTHORS = {
    'Jan Hula': '200/9929',
    'Tomas Mikolov': '45/8055',
    'Filip': '281/5411',
-   'Barbora Hudcova': '298/8255,
+   'Barbora Hudcova': '298/8255',
    'Jelle': '285/5325',
    'Robert': '65/1151',
    'Erik': '211/3939',
