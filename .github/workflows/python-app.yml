@@ -23,8 +23,7 @@ jobs:
     - name: Run pub export
       run: |
         python pub-year-list.py --csv 2021 > bib-2021.csv
-	python to_excel.py bib-2021
-
+        python to_excel.py bib-2021
     - name: update the repo
       run: |
         git config --local user.name "auto updater"
