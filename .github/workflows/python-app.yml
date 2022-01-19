@@ -16,11 +16,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python 2.7
+    - name: Set up Python 3.7
       uses: actions/setup-python@v2
       with:
-        python-version: "2.7"
-    - run: pip install pandas
+        python-version: "3.7"
+    - run: pip3 install pandas
     - name: Run pub export
       run: |
         python pub-year-list.py --csv 2021 > bib-2021.csv
