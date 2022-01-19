@@ -20,6 +20,8 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: "2.7"
+        cache: 'pip'
+    - run: pip install pandas
     - name: Run pub export
       run: |
         python pub-year-list.py --csv 2021 > bib-2021.csv
