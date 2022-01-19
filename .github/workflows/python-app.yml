@@ -25,6 +25,8 @@ jobs:
         python pub-year-list.py --csv 2021 > bib-2021.csv
     - name: update the repo
       run: |
+        git config --local user.name "auto updater"
+        git config --local user.email "updater@bla.com"
         git add .
         git commit -m "Auto update pubs"
     - name: Push changes 
