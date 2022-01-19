@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 import re
@@ -104,11 +104,11 @@ def fields(entry):
 
 def html(entry):
    (authors, title, journal, links) = fields(entry)
-   sys.stdout.write((HTML % (authors,title,journal,links)).encode('utf8'))
+   sys.stdout.write((HTML % (authors,title,journal,links)))
 
 def csv(entry):
    (authors, title, journal, links) = fields(entry)
-   sys.stdout.write(("%s; %s; %s\n" % (authors,title,journal)).encode('utf8'))
+   sys.stdout.write(("%s; %s; %s\n" % (authors,title,journal)))
 
 def publications(year, htmlmode=True):
    ris = ""
