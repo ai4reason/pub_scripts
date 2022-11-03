@@ -100,7 +100,7 @@ def fields(entry):
       linkname = "easychair"
    else:
       linkname = "url"
-   links = '[ <a href="http://dblp.uni-trier.de/rec/bibtex0/%s">BibTeX</a> | <a href="%s">%s</a> | <a href="http://dblp.uni-trier.de/rec/html/%s">dblp</a> ]' % (entry["ID"].split(":")[1], entry["UR"], linkname, entry["ID"].split(":")[1])
+   links = '[ <a href="https://dblp.uni-trier.de/rec/%s.html?view=bibtex">BibTeX</a> | <a href="%s">%s</a> | <a href="http://dblp.uni-trier.de/rec/html/%s">dblp</a> ]' % (entry["ID"].split(":")[1], entry["UR"], linkname, entry["ID"].split(":")[1])
 
    return (authors, title, journal, links)
 
