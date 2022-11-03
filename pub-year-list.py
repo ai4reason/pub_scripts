@@ -9,7 +9,7 @@ try:
 except ImportError:
    from urllib2 import urlopen # for Python 2
 
-DBLP_AUTHORS = {
+DBLP_AUTHORS = { 
    'Josef': '63/5214',
    'Karel': '39/11138',
    'Jan': '88/7998',
