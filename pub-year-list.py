@@ -76,7 +76,7 @@ def fields(entry):
    if entry["TY"] == "Informal Publication":
       journal = "arXiv %s %s (%s)." % (entry["JO"], entry["VL"], entry["PY"].rstrip("/"))
    elif entry["TY"] == "CPAPER":
-      if "SP" in entry:
+      if "SP" in entry and "EP" in entry:
          journal = "%s: %s-%s (%s)." % (entry["BT"], entry["SP"], entry["EP"], entry["PY"].rstrip("/"))
       else:
          journal = "%s: (%s)." % (entry["BT"], entry["PY"].rstrip("/"))
