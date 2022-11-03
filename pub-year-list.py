@@ -87,6 +87,8 @@ def fields(entry):
          journal = "%s %s: (%s)." % (entry["JO"], entry["VL"], entry["PY"].rstrip("/"))
    elif entry["TY"] == "CONF":
       journal = "%s %s (%s)." % (entry["T3"], entry["VL"], entry["PY"].rstrip("/"))
+   elif entry["TY"] == "CHAP":
+      journal = "%s: %s-%s (%s)." % (entry["BT"], entry["SP"], entry["EP"], entry["PY"].rstrip("/"))
    else:
       journal = "YAN TODO: " + entry["TY"]
 
