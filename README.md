@@ -1,5 +1,7 @@
+SCRIPTS OUT DATED by [ai4reason/ai4reason.github.io](https://github.com/ai4reason/ai4reason.github.io)
+
 How to update publications list in activities for AI4REASON
-===========================================================
+-----------------------------------------------------------
 
 1) Use the script `pub-year-list.py` as follows:
 
